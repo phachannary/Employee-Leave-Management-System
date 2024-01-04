@@ -1,0 +1,28 @@
+{
+    "Employees" : [
+        {"id" :1, "FirstName":"Linda", "LastName": "Soum", "PhoneNumber":"0987654321","Email": "linda@gmail.com", "ProfileImage":"r1.jpg", "Status" : "Active"},
+        {"id" :2, "FirstName":"Chanry", "LastName": "Chhoy", "PhoneNumber":"0987654321","Email": "linda@gmail.com", "ProfileImage":"r2.jpg", "Status" : "Active"},
+        {"id" :3, "FirstName":"Chanary", "LastName": "Pha", "PhoneNumber":"0987654321","Email": "linda@gmail.com", "ProfileImage":"r4.png", "Status" : "Inactive"},
+        {"id" :4, "FirstName":"Pros", "LastName": "Nob", "PhoneNumber":"0987654321","Email": "linda@gmail.com", "ProfileImage":"r3.png", "Status" : "Active"}
+      ],
+      "Departments" : [
+        {"id" :1, "DepartmentName":"Human Resource", "Created": "01-Jan-2021 12:00: PM"},
+        {"id" :2, "DepartmentName":"Information Technology", "Created": "01-Jan-2021 12:00: PM"},
+        {"id" :3, "DepartmentName":"Finace", "Created": "01-Jan-2021 12:00: PM"},
+        {"id" :4, "DepartmentName":"Design", "Created": "01-Jan-2021 12:00: PM"},
+        {"id" :5, "DepartmentName":"Operation", "Created": "01-Jan-2021 12:00: PM"}
+      ],
+      "LeaveTypes" : [
+        {"id":1, "name": "Annual Leave"},
+        {"id":2, "name": "Special Leave"},
+        {"id":3, "name": "Sick Leave"}
+      ],
+      "LeaveHistory": [
+        {"id":1,"EmployeeName": "Chanry", "LeaveType": "Special Leave","Created":"01-Jan-2021 12:00: PM","Status": "Panding"},
+        {"id":2,"EmployeeName": "Channary", "LeaveType": "sick Leave","Created":"01-Jan-2021 12:00: PM","Status": "Aproved"},
+        {"id":3,"EmployeeName": "Chanthy", "LeaveType": "Annual Leave","Created":"01-Jan-2021 12:00: PM","Status": "Rejected"},
+        {"id":4,"EmployeeName": "Pros", "LeaveType": "Special Leave","Created":"01-Jan-2021 12:00: PM","Status": "Panding"}
+
+      ]
+      
+}

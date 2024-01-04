@@ -5,7 +5,7 @@ class Login extends React.Component {
   render() {
     return (
       <div >
-        <Header/>
+        <Header parentToChild={"Admin Login  |  Employee Login"}/>
         <div className="login-container">
       <div>
         <h3>Welcome to ELMS</h3>

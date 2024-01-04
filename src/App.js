@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import LeaveDetail from "./pages/LeaveDetail";
 import Dashboard from "./pages/dashboard";
 
+
 function App() {
   return (
     <div className="App">
@@ -11,8 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard/>} />
-          <Route path='/leave-detail' element={<LeaveDetail/>} />
-
+          <Route path='/leave-detail/:leaveID' element={<LeaveDetail/>} />
         </Routes>
       </BrowserRouter>
     </div>
