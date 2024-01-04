@@ -1,7 +1,9 @@
 .menu-container{
-    width: 20%;
+    width: 15%;
     background: #dfd0d0;
     margin: 10px;
     border-radius: 5px;
     padding: 20px;
+    height: 86vh;
 }
+
