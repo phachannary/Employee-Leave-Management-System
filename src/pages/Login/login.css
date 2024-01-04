@@ -1,0 +1,36 @@
+
+.login-container{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background: white;
+    padding: 20px;
+    width: 450px;
+    border-radius: 5px;
+}
+.txt_field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.txt_field input{
+
+    border:none;
+    border-bottom: 1px solid gray;
+    background: rgb(250, 250, 250);
+}
+.txt_field input:focus{
+    background: rgb(238, 238, 238);
+    outline: none;
+}
+.form-btm{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.form-btm :first-child{
+    margin-right: 5px;
+}

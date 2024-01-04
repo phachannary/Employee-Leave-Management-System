@@ -1,20 +1,22 @@
-import HeaderComponent from "./components/HeaderComponent";
-import FormComponent from "./components/LoginComponent";
-// import MenuComponent from "./components/MenuComponent";
-// import MainComponent from "./components/MainComponent";
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import LeaveDetail from "./pages/LeaveDetail";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
-    <div className="div-container">
-    <HeaderComponent/>
-    <FormComponent/>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/dashboard' element={<Dashboard/>} />
+          <Route path='/leave-detail' element={<LeaveDetail/>} />
 
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
-
-// <MenuComponent/>
-// <MainComponent/>
 
 export default App;

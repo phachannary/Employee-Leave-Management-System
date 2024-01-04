@@ -1,4 +1,7 @@
 .menu-container{
     width: 20%;
     background: #dfd0d0;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
 }

@@ -4,7 +4,7 @@ class Header extends React.Component {
   render() {
     return (
       <div class="header-container">
-        <h4>Employee Leave Management System</h4>
+        <h5>Employee Leave Management System</h5>
     </div>
     )
   }
