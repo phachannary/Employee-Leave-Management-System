@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import LeaveDetail from "./pages/LeaveDetail";
 import Dashboard from "./pages/dashboard";
+import LeaveType from "./pages/LeaveType";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/leave-detail' element={<LeaveDetail/>} />
+          <Route path='/leave-type' element={<LeaveType/>} />
 
         </Routes>
       </BrowserRouter>
