@@ -21,6 +21,7 @@ function App() {
           <Route path='/leave-detail/:leaveID' element={<LeaveDetail/>} />
           <Route path='/leave-type' element={<LeaveType/>} />
           <Route path='/change-password' element={<ChangePassword/>} />
+          <Route path='/employee-leave' element={<EmployeeLeave/>} />
         </Routes>
       </BrowserRouter>
     </div>
