@@ -23,14 +23,11 @@
         {"id":3,"EmployeeName": "Chanthy", "LeaveType": "Annual Leave","Created":"01-Jan-2021 12:00: PM","Status": "Rejected"},
         {"id":4,"EmployeeName": "Pros", "LeaveType": "Special Leave","Created":"01-Jan-2021 12:00: PM","Status": "Panding"}
 
-<<<<<<< HEAD
       ],
       "leaveType": [
-        { "id": 1, "name": "Annul leave","age": "23"},
-        { "id": 2, "name": "Special Leave","age": "23" },
-        { "id": 3, "name": " Sick Leave","age": "23"}
-=======
->>>>>>> 0eb1b6b4737e5154da3651bd918ac45a548423c7
+        { "id": 1, "name": "Annul leave","amount": "18"},
+        { "id": 2, "name": "Special Leave","amount": "12" },
+        { "id": 3, "name": " Sick Leave","amount": "23"}
       ]
       
 }

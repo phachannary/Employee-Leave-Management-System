@@ -1,55 +1,54 @@
-import React, { useState } from 'react';
+import React from "react";
 import jsonData from "../../data.json";
-const items = jsonData.leaveType;
-const User = () => {
-  // State variables
-  const [users, setUsers] = useState([items]);
-  const [newUser, setNewUser] = useState({ name: "", age: "" });
+import "./index.css";
 
-  // Function to handle user creation
-  const createUser = () => {
-    const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
-    const createdUser = { id: newId, name: newUser.name, age: newUser.age };
-    setUsers([...users, createdUser]);
-    setNewUser({ name: "", age: "" });
-  };
+class LeaveType extends React.Component {
+  
+  constructor(){
+    super();
+    this.state = {leaveTypes : [], show: false}
+  }
 
-  // Function to handle user deletion
-  const deleteUser = (id) => {
-    const updatedUsers = users.filter((user) => user.id !== id);
-    setUsers(updatedUsers);
-  };
+  componentDidMount(){
+    this.GetLeaveTypeList();
+  }
+  GetLeaveTypeList(){
+    this.setState({leaveTypes:jsonData.leaveType})
+  }
 
-  return (
-    <div>
-      {/* Form for creating a new user */}
-      <h2>Create Leave Type:</h2>
-      <input
-        type="text"
-        placeholder="Name"
-        value={newUser.name}
-        onChange={(e) => setNewUser({ ...newUser, name: e.target.value })}
-      />
-      <input
-        type="text"
-        placeholder="Age"
-        value={newUser.age}
-        onChange={(e) => setNewUser({ ...newUser, age: e.target.value })}
-      />
-      <button onClick={createUser}>Add User</button>
-
-      {/* Displaying the list of users */}
-      <h2>Users:</h2>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id}>
-            {user.name} - {user.age}
-            <button onClick={() => deleteUser(user.id)}>Delete</button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default User;
+  render() {
+    const {leaveTypes} = this.state;
+    return (
+      <div >
+        {
+          <div class="mt-4">
+            <div className="card-table">
+                <h4 class="pt-3 pb-2 ">Leave Type List</h4>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th >ID</th>
+                      <th >Name</th>
+                      <th >Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody >
+                  {leaveTypes.map((ele) => {
+                    return (
+                      <tr >
+                        <td>{ele.id}</td>
+                        <td>{ele.name}</td>
+                        <td>{ele.amount}</td>
+                      </tr>
+                    );
+                  })} 
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        }
+        
+    </div>)
+  }
+}
+export default LeaveType;
