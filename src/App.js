@@ -6,7 +6,7 @@ import Dashboard from "./pages/dashboard";
 import LeaveManagement from './pages/LeaveManagement';
 import LeaveType from './pages/LeaveType';
 import ChangePassword from './pages/Profile/change-password';
-import LeaveTypes from './pages/LeaveTypes';
+import EmployeeLeave from './pages/EmployeeLeave';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Dashboard />} />
           <Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/leave-management' element={<LeaveManagement/>} />
-          <Route path='/employee-leave' element={<LeaveTypes/>} />
+          <Route path='/employee-leave' element={<EmployeeLeave/>} />
           <Route path='/leave-detail/:leaveID' element={<LeaveDetail/>} />
           <Route path='/leave-type' element={<LeaveType/>} />
           <Route path='/change-password' element={<ChangePassword/>} />
