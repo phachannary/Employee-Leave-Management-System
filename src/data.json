@@ -23,6 +23,11 @@
         {"id":3,"EmployeeName": "Chanthy", "LeaveType": "Annual Leave","Created":"01-Jan-2021 12:00: PM","Status": "Rejected"},
         {"id":4,"EmployeeName": "Pros", "LeaveType": "Special Leave","Created":"01-Jan-2021 12:00: PM","Status": "Panding"}
 
+      ],
+      "leaveType": [
+        { "id": 1, "name": "Annul leave","amount": "18"},
+        { "id": 2, "name": "Special Leave","amount": "12" },
+        { "id": 3, "name": " Sick Leave","amount": "23"}
       ]
       
 }
