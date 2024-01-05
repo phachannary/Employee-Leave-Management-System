@@ -11,12 +11,12 @@ body{
     height: 93vh;
     display: flex;
     background: #978c8c;
-    padding: 10px;
+    /* padding: 10px; */
 }
 .dashboard-content{
     background: #dfb5b5;
     width: 85%; ;
-    margin: 10px;
+    margin: 20px;
     border-radius: 5px;
     padding: 20px;
 }

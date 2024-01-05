@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import LeaveDetail from "./pages/LeaveDetail";
 import Dashboard from "./pages/dashboard";
-import LeaveType from "./pages/LeaveType";
-import ChangePassword from "./pages/Profile/change-password";
+import LeaveManagement from './pages/LeaveManagement';
+import LeaveType from './pages/LeaveType';
+import ChangePassword from './pages/Profile/change-password';
 
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/' element={<Dashboard />} />
           <Route path='/dashboard' element={<Dashboard/>} />
-          <Route path='/leave-type' element={<LeaveType/>} />
+          <Route path='/leave-management' element={<LeaveManagement/>} />
           <Route path='/leave-detail/:leaveID' element={<LeaveDetail/>} />
           <Route path='/leave-type' element={<LeaveType/>} />
           <Route path='/change-password' element={<ChangePassword/>} />
